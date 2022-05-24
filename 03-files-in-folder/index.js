@@ -13,6 +13,7 @@ function ReadingFiles(way) {
             if(content.isFile()){
              console.log('Файл: ' + path.parse(file).name +'  ' +'Расширение:'+ path.extname(file) + '  ' +'Размер: '+  content.size+ 'б')}
             else if(content.isDirectory){
+               return
               ReadingFiles(`${way + file}/`)
    
               }}
