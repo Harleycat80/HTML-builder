@@ -6,7 +6,7 @@ const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
-const exit = '.exit';
+const exit = 'exit';
 
 rl.question('Как успехи в JS? \n', function (data) {
   if (data == exit) {
