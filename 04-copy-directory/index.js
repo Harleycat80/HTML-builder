@@ -9,7 +9,7 @@ fs.readdir(path.join(__dirname, 'files-copy'), (err, data)=>{
    if(err){
       throw err
    }
-   console.log(data);
+  
    data.forEach(item => fs.unlink(path.join(__dirname, 'files-copy'+'/'+item), (err)=>{
       if(err){
          throw err
